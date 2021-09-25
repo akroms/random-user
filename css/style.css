@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+header .profile {
+  margin-top: 1em;
+  padding: 0.7em;
+  justify-content: center;
+  border: 1px solid #808080;
+  background-color: #FAF8FF;
+  width: 250px;
+  margin: auto;
+  border-radius: 5px;
+}
+header .profile-image {
+  border-radius: 50%;
+}
+header .profile-name-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 0.6em;
+}
+header .profile-title, header .profile-name, header .profile-surname {
+  margin-left: 0.3em;
+}
+header .profile-cell, header .profile-email {
+  margin: 0.5em 0;
+}
+
+/*# sourceMappingURL=style.css.map */
