@@ -13,18 +13,19 @@ xhr.onload = () => {
         /* Parsing Information */
         result = object.results,
         name = result[0].name,
-        cell = result[0].cell,
+        cell = result[0].cell, 
         email = result[0].email,
+        age = result[0].dob.age - 10,
         picture = result[0].picture.large,
+        
         /* Filer for unwanted email parts */
         cut = function (e) {
             if (email.length > 20) {
                 email = email.slice(9);
-            }
+            } 
         };
 
     cut(email);
-    console.log(result)
 
     content.innerHTML = `
             <img
@@ -35,16 +36,19 @@ xhr.onload = () => {
 
             <div class="profile-content">
                 <div class="profile-name-container">
-                Name:  
+                    <b>Name:</b>  
                     <p class="profile-title">${name.title}</p>
                     <p class="profile-name">${name.first}</p>
                     <p class="profile-surname">${name.last}</p>
                 </div>
                 <p class="profile-cell">
-                    Number: ${cell}
+                <b>Number: </b>${cell}
                 </p>
                 <p class="profile-email">
-                    Email: ${email}
+                <b>Email: </b>${email}
+                </p>
+                <p class="profile-age">
+                    <b>Age: </b>${age}
                 </p>
             </div>
 
