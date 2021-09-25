@@ -1,0 +1,38 @@
+@use "./base"; 
+
+header {
+    display: flex;
+    flex-direction: column;
+    
+    text-align: center;
+    .profile {
+        margin-top: 1em;
+        padding: 0.7em;
+        justify-content: center;
+        border: 1px solid #808080;
+        background-color: #FAF8FF;
+        width: 250px;
+        margin: auto;
+        border-radius: 5px;
+        &-image {
+            border-radius: 50%;
+        }
+        &-content {
+            
+        }
+        &-name-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 0.6em;
+        }
+        &-title,
+        &-name,
+        &-surname {
+            margin-left: 0.3em;
+        }
+        &-cell,
+        &-email {
+            margin: 0.5em 0;
+        }
+    }
+}
