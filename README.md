@@ -1,3 +1,3 @@
 # random-user
 
-https://random-uzer.netlify.app/
+Demo link --> https://random-uzer.netlify.app/
