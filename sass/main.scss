@@ -2,23 +2,27 @@
 
 header {
     display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 90%;
+    margin: auto;
+}
+
+.header {
+    display: flex;
     flex-direction: column;
-    
     text-align: center;
     .profile {
-        margin-top: 1em;
         padding: 0.7em;
         justify-content: center;
         border: 1px solid #808080;
         background-color: #FAF8FF;
-        width: 250px;
-        margin: auto;
+        width: 100%;
+        margin: 1em auto;
         border-radius: 5px;
         &-image {
             border-radius: 50%;
-        }
-        &-content {
-            
         }
         &-name-container {
             display: flex;
@@ -33,6 +37,19 @@ header {
         &-cell,
         &-email {
             margin: 0.5em 0;
+        }
+    }
+}
+
+@media (min-width:567px) {
+    .header {
+        &-title {
+            font-size: 2.5em;
+        }
+        .profile {
+            width: 500px;
+            display: flex;
+            justify-content: space-evenly;
         }
     }
 }
